@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Auto preenchimento Nat-Jus",
+  "description": "Preenche automaticamente formulário de requisição de Notas Técnicas",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.cnj.jus.br/e-natjus/*"],
+      "js": ["config.js", "index.js", "popup.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_icon": "natjus-autofill.png",
+    "permissions": ["tabs"],
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "icons": {
+    "16": "natjus-autofill-16.png",
+    "32": "natjus-autofill-32.png",
+    "48": "natjus-autofill-48.png",
+    "128": "natjus-autofill.png"
+  }
+}

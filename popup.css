@@ -1,0 +1,57 @@
+.main {
+  padding: 10px;
+  padding-top: 0;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+form div {
+  display: flex;
+  margin-top: 5px;
+}
+
+form label {
+  width: 75px;
+  font-weight: bold;
+  justify-self: center;
+}
+
+form input,
+form textarea {
+  position: relative;
+  border-radius: 5px;
+  width: 220px;
+}
+
+form textarea {
+  border: 1.6px solid black;
+}
+
+.buttonWrap {
+  display: flex;
+  gap: 5px;
+  width: 300px;
+  justify-content: center;
+}
+
+.buttonWrap button {
+  background-color: #1672b3 !important;
+  padding: 5px;
+  padding-inline: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttonWrap button:hover {
+  background-color: #257cbb81 !important;
+}
