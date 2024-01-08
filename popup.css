@@ -44,6 +44,7 @@ form textarea {
 }
 
 .buttonWrap button {
+  color: white;
   background-color: #1672b3 !important;
   padding: 5px;
   padding-inline: 10px;
@@ -54,4 +55,5 @@ form textarea {
 
 .buttonWrap button:hover {
   background-color: #257cbb81 !important;
+  color: black;
 }
