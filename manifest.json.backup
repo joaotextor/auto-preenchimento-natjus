@@ -2,11 +2,7 @@
   "manifest_version": 3,
   "name": "Auto preenchimento Nat-Jus",
   "description": "Preenche automaticamente formulário de requisição de Notas Técnicas",
-  "version": "1.0.2",
-  "background": {
-    "service_worker": "background.js",
-    "type": "module"
-  },
+  "version": "1.0.1",
   "content_scripts": [
     {
       "matches": [
